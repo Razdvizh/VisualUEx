@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{B632D430-4794-D547-A846-E29033AFD501}",
+	"Category": "",
+	"Description": "Example project that showcases VisualU plugin.",
+	"Modules": [
+		{
+			"Name": "VisualUEx",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "Paper2D",
+			"Enabled": true
+		},
+		{
+			"Name": "VisualU",
+			"Enabled": true
+		}
+	]
+}
