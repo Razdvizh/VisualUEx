@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.4",
+	"EngineAssociation": "{618564AB-42E1-C055-9F40-A6B3E0499275}",
 	"Category": "",
 	"Description": "Example project that showcases VisualU plugin.",
 	"Modules": [
