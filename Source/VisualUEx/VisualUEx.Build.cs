@@ -10,7 +10,7 @@ public class VisualUEx : ModuleRules
 
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "VisualU" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] { "UMG" });
 
