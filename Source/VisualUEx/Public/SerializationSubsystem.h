@@ -8,8 +8,8 @@
 
 class UVisualVersioningSubsystem;
 class UVisualController;
-class ULocalPlayer;
 class FArchive;
+struct FPlatformUserId;
 
 /**
  * Game instance subsystem that handles saving and loading gameplay data.
@@ -23,10 +23,10 @@ public:
 	USerializationSubsystem();
 
 	UFUNCTION(BlueprintCallable, Category = "Serialization Subsystem")
-	bool LoadVisualU(UVisualVersioningSubsystem* VersioningSubsystem, UVisualController* VisualController, ULocalPlayer* LocalPlayer, const FString& Filename);
+	bool LoadVisualU(UVisualVersioningSubsystem* VersioningSubsystem, UVisualController* VisualController, const FPlatformUserId& UserId, const FString& Filename);
 
 	UFUNCTION(BlueprintCallable, Category = "Serialization Subsystem")
-	bool SaveVisualU(UVisualVersioningSubsystem* VersioningSubsystem, UVisualController* VisualController, ULocalPlayer* LocalPlayer, const FString& Filename);
+	bool SaveVisualU(UVisualVersioningSubsystem* VersioningSubsystem, UVisualController* VisualController, const FPlatformUserId& UserId, const FString& Filename);
 
 	UFUNCTION(BlueprintCallable, Category = "Serialization Subsystem")
 	bool GetAllSaveGameFilenames(TArray<FString>& Filenames, int32 UserIndex);
